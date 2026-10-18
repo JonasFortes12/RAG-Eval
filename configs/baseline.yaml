@@ -1,0 +1,16 @@
+name: baseline
+corpus:
+  manifest: data/corpus_manifest.json
+  raw_dir: data/raw/k8s
+chunking:
+  strategy: fixed
+  size_words: 200 # approximation of tokens; revisit in Phase 3
+  overlap_words: 40
+embedding:
+  model: BAAI/bge-small-en-v1.5
+  dim: 384 # embedding dimension of the bge-small-en-v1.5 model
+  normalize: true
+  query_prefix: "Represent this sentence for searching relevant passages: "
+index:
+  qdrant_url: http://localhost:6333
+  collection_prefix: k8s

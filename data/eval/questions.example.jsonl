@@ -1,0 +1,2 @@
+{"id": "q001", "type": "factual", "split": "dev", "question": "What is the difference between a Deployment and a StatefulSet?", "evidence": [{"doc": "content/en/docs/concepts/workloads/controllers/statefulset.md", "char_start": null, "char_end": null}], "reference_answer": "TODO: write by hand after reading the doc", "answerable": true}
+{"id": "q002", "type": "unanswerable", "split": "dev", "question": "How do I configure Kubernetes to train a PyTorch model on TPUs automatically?", "evidence": [], "reference_answer": null, "answerable": false}
